@@ -1,0 +1,10 @@
+<h2>Halo, <%=name %></h2>
+<h4>Daftar Mahasiswa</h4>
+<% if (product.length < 1) { %>
+<p>Data Product masih kosong</p>
+<% } else { %> <% product.forEach(pdt => { %>
+<ul>
+  <li><%= pdt.name %></li>
+  <li><%= pdt.price %></li>
+</ul>
+<% }) %> <% } %>
